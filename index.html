@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МонтажСпецСтрой</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container header-container">
+            <div class="logo"></div>
+            
+            <!-- Навигация -->
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#steps">Этапы работы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li class="mobile-search-item">
+                        <div class="search-container mobile-search">
+                            <input type="text" id="mobile-search-input" placeholder="Поиск...">
+                            <button id="mobile-search-btn">Поиск</button>
+                        </div>
+                    </li>
+                    <li class="theme-toggle-item">
+                        <div class="theme-toggle" id="theme-toggle-mobile">
+                            <img src="./img/night.svg" alt="Темная тема">
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="header-right">
+                    <div class="search-toggle" id="search-toggle">
+                        <img src="./img/search.svg" alt="Поиск">
+                    </div>
+                    <div class="theme-toggle" id="theme-toggle">
+                        <img src="./img/night.svg" alt="Темная тема">
+                    </div>
+                    <!-- Бургер-меню -->
+                    <div class="burger" id="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </div>
+                
+                <div class="search-container" id="search-container">
+                    <input type="text" id="search-input" placeholder="Поиск...">
+                    <button id="search-btn">Поиск</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Добро пожаловать<br> на сайт МонтажСпецСтрой!</h1>
+                <p>Мы рады видеть Вас здесь! Наша компания предлагает <br>
+                широкий спектр услуг по монтажу и строительству, обеспечивая <br>
+                высокое качество и профессиональный подходк каждому проекту.<br>  
+                Независимо от масштабов Ваших задач, мы готовы помочь <br>реализовать Ваши идеи и сделать проект успешным.<br> Давайте строить будущее вместе!</p>
+                <a href="#" class="btn contact-btn">Связаться с нами</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Услуги -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Предоставляемые услуги</h2>
+            <div class="services-list">
+                <div class="service-item fade-in">
+                    <div class="service-icon"></div>
+                    <div class="service-content">
+                        <h3>Монтажные работы</h3>
+                        <p>Профессиональный монтаж конструкций любого уровня сложности.</p>
+                        <a href="#" class="btn details-btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="service-item fade-in">
+                    <div class="service-icon"></div>
+                    <div class="service-content">
+                        <h3>Строительство</h3>
+                        <p>Полный цикл строительных работ от проектирования до сдачи объекта.</p>
+                        <a href="#" class="btn details-btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="service-item fade-in">
+                    <div class="service-icon"></div>
+                    <div class="service-content">
+                        <h3>Безопасность</h3>
+                        <p>Организация систем безопасности на объектах любого назначения.</p>
+                        <a href="#" class="btn details-btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="service-item fade-in">
+                    <div class="service-icon"></div>
+                    <div class="service-content">
+                        <h3>Электромонтаж</h3>
+                        <p>Квалифицированный электромонтаж с соблюдением всех норм.</p>
+                        <a href="#" class="btn details-btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="service-item fade-in">
+                    <div class="service-icon"></div>
+                    <div class="service-content">
+                        <h3>Доставка</h3>
+                        <p>Оперативная доставка материалов и оборудования на объекты.</p>
+                        <a href="#" class="btn details-btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="service-item fade-in">
+                    <div class="service-icon"></div>
+                    <div class="service-content">
+                        <h3>Пожарные работы</h3>
+                        <p>Заказ, установка противопожарных систем и обеспечение их корректной работы.</p>
+                        <a href="#" class="btn details-btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Этапы работы -->
+    <section class="steps" id="steps">
+        <div class="container">
+            <h2>Этапы работы</h2>
+            <div class="steps-list">
+                <div class="step fade-in">
+                    <h3>Согласование проекта</h3>
+                    <p>Разрабатываем проектную документацию, проверяем на соответствие ГОСТам и СНИПам, предоставляем окончательное КП со стоимостью и сроками проведения работ.</p>
+                </div>
+                <div class="step fade-in">
+                    <h3>Заключение договора</h3>
+                    <p>Заключаем официальный договор, согласовываем окончательные детали, графики производства работ и платежей, приступаем к работе.</p>
+                </div>
+                <div class="step fade-in">
+                    <h3>Выполнение работ</h3>
+                    <p>Производим выполнение согласованных видов работ, сроки выполнения работ и оплата работ производятся согласно графика платежей, 100% предоплата не требуется.</p>
+                </div>
+                <div class="step fade-in">
+                    <h3>Сдача объекта</h3>
+                    <p>Передаем исполнительную документацию заказчику и сдаем объект в эксплуатацию.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Контакты -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Чувствуйте себя свободно и задавайте любые вопросы!</h2>
+            <div class="contact-content">
+                <div class="contact-text fade-in">
+                    <h3>Согласуем данные и приступим к работе</h3>
+                    <p>Разработаем проектную документацию, проверим на соответствие ГОСТам, предоставим окончательное КП со стоимостью и сроками проведения работ, а также заключим официальный договор, согласуем окончательные детали, графики производства работ и платежей, приступим к работе!</p>
+                </div>
+                <div class="contact-text fade-in">
+                    <h3>Мы всегда рады новым клиентам и открыты для сотрудничества</h3>
+                    <p>Независимо от масштабов, мы готовы предложить индивидуальный подход, профессиональные решения и качественный сервис. Ваши идеи и потребности — наш приоритет. Присоединяйтесь к числу наших довольных клиентов! Ждём Вашего обращения и готовы к новым совместным проектам!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Футер -->
+    <footer id="about">
+        <div class="container">
+            <div class="copyright"></div>
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Города</h3>
+                    <ul>
+                        <li><a href="#">Уфа</a></li>
+                        <li><a href="#">Стерлитамак</a></li>
+                        <li><a href="#">Благовещенск</a></li>
+                        <li><a href="#">Ишимбай</a></li>
+                        <li><a href="#">Салават</a></li>
+                        <li><a href="#">Все города ></a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>О нас</h3>
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Сотрудники</a></li>
+                        <li><a href="#">Партнёры</a></li>
+                        <li><a href="#">Офисы</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Обратная связь ></a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Тех. поддержка</h3>
+                    <ul>
+                        <li><a href="#">Заказ звонка</a></li>
+                        <li><a href="#">Вопрос по сайту</a></li>
+                        <li><a href="#">Форма связи</a></li>
+                        <li><a href="#">Вопрос по заказу</a></li>
+                        <li><a href="#">Вопрос по товару</a></li>
+                        <li><a href="#">Далее ></a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Доп. сведения</h3>
+                    <ul>
+                        <li><a href="#">Регистрация в ФНС</a></li>
+                        <li><a href="#">Регистрация в ПФР</a></li>
+                        <li><a href="#">Регистрация в ФСС</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Адреса</a></li>
+                        <li><a href="#">Полный список ></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2025. МонтажСпецСтрой
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="feedback-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Форма обратной связи</h2>
+            <form id="feedback-form">
+                <div class="form-group">
+                    <label for="fullname">ФИО:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Номер телефона:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn submit-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
